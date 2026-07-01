@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://github.com/SANTHIYA2806/Food-Verse/blob/main/src/main/resources/static/images/logo.jpg?raw=true">
+</head>
+<body>
+    <div class="container">
+        <nav class="fixed-top nav-style">
+            <div class="container d-flex flex-wrap align-items-center">
+                <h2>Food<span style="color:var(--orange);">Spot</span></h2>
+                <div class="d-flex ms-auto">
+                    <a href="cartitems.html"><button id="cart-btn">Your Cart <i class="bi bi-cart"></i></button></a> 
+                </div>
+            </div>
+        </nav>
+
+        <h2 style="margin-top: 100px;">Welcome To Explore <span style="color: var(--orange);" >Keralam </span>Foods</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC3ZVjrLHCuWMQuujrk0mTCvmXzOq4YqeY1CBzUR7rsnZGCAK0arQdXBZX&s=10">
+                        <div class="card-body">
+                            <h2>Appam with Stew</h2>
+                            <p>Soft rice pancakes served with creamy coconut vegetable stew.</p>
+                            <h1>₹90</h1>
+                            <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="decrease(this)">-</button>
+                                <span>Quantity : <span class="qty">1</span></span>
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="increase(this)">+</button>
+                                <button class="btn" onclick="addToCart(this,'Appam with Stew',90,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC3ZVjrLHCuWMQuujrk0mTCvmXzOq4YqeY1CBzUR7rsnZGCAK0arQdXBZX&s=10')">Add to Cart</button>
+                            </div>
+                            <button class="btn w-100 mt-2">Buy Your Food</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://t3.ftcdn.net/jpg/04/81/62/46/360_F_481624628_sguOwrEnIBZPzWQnDcR3dtPnkiK3yXmV.jpg">
+                        <div class="card-body">
+                            <h2>Puttu&Kadala Curry</h2>
+                            <p>Steamed rice cake served with spicy black chickpea curry.</p>
+                            <h1>₹80</h1>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="decrease(this)">-</button>
+                                <span>Quantity : <span class="qty">1</span></span>
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="increase(this)">+</button>
+                                <button class="btn" onclick="addToCart(this,'Puttu&Kadala Curry',80,'https://t3.ftcdn.net/jpg/04/81/62/46/360_F_481624628_sguOwrEnIBZPzWQnDcR3dtPnkiK3yXmV.jpg')">Add to Cart</button>
+                            </div>
+                            <button class="btn w-100 mt-2">Buy Your Food</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnv5_VvwAdY0YhW9T86VaJ4FOpcn9sC-5v1IRRHXYULA5fLjsKzBrMUCI&s=10">
+                        <div class="card-body">
+                            <h2>Meen Pollichathu</h2>
+                            <p>Pearl spot fish marinated, wrapped in banana leaf, roasted.</p>
+                            <h1>₹220</h1>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="decrease(this)">-</button>
+                                <span>Quantity : <span class="qty">1</span></span>
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="increase(this)">+</button>
+                                <button class="btn" onclick="addToCart(this,'Meen Pollichathu',220,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnv5_VvwAdY0YhW9T86VaJ4FOpcn9sC-5v1IRRHXYULA5fLjsKzBrMUCI&s=10')">Add to Cart</button>
+                            </div>
+                            <button class="btn w-100 mt-2">Buy Your Food</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://media.assettype.com/gulfnews/import/2021/01/31/Kerala-sadhya-_17758a4302b_large.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true">
+                        <div class="card-body">
+                            <h2>Kerala Sadya</h2>
+                            <p>Traditional banana leaf feast with rice and side dishes.</p>
+                            <h1>₹180</h1>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="decrease(this)">-</button>
+                                <span>Quantity : <span class="qty">1</span></span>
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="increase(this)">+</button>
+                                <button class="btn" onclick="addToCart(this,'Kerala Sadya',180,'https://media.assettype.com/gulfnews/import/2021/01/31/Kerala-sadhya-_17758a4302b_large.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true')">Add to Cart</button>
+                            </div>
+                            <button class="btn w-100 mt-2">Buy Your Food</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function increase(button){
+            let qty = button.parentElement.querySelector(".qty");
+            let quantity = Number(qty.innerText);
+            quantity++;
+            qty.innerText = quantity;
+        }
+        function decrease(button){
+            let qty = button.parentElement.querySelector(".qty");
+            let quantity = Number(qty.innerText);
+            if(quantity>1){
+                quantity--;
+                qty.innerText = quantity;
+            }
+        }
+
+        function addToCart(button,name,price,image){
+            let qty = button.parentElement.querySelector(".qty").innerText;
+
+            let cart = JSON.parse(localStorage.getItem("cart"))||[];
+
+            let existingItem = cart.find(item => item.name === name);
+
+            if(existingItem){
+                existingItem.quantity += Number(qty);
+            }
+            else{
+                cart.push({
+                    name : name,
+                    price : price,
+                    quantity : Number(qty),
+                    image : image
+                });
+            }
+
+            localStorage.setItem("cart",JSON.stringify(cart));
+            alert("Added to Cart");
+        }
+    </script>
+</body>
+</html>

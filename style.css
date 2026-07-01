@@ -1,0 +1,36 @@
+:root {
+    --black: #000000;
+    --orange: #ff9900;
+    --white: #ffffff;
+}
+@font-face {
+    font-family: 'AveriaGruesaLibre';
+    src: url('/fonts/AveriaGruesaLibre-Regular.ttf') format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'AveriaGruesaLibre';
+}
+#cart-btn{
+    background-color: var(--orange);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+.card img{
+    height: 200px;
+    object-fit: cover;
+}
+.card button,.cartbtn{
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+.card button:hover{
+    border: 2px solid var(--orange);
+}

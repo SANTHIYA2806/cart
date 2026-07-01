@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://github.com/SANTHIYA2806/Food-Verse/blob/main/src/main/resources/static/images/logo.jpg?raw=true">
+</head>
+<body>
+    <div class="container">
+        <nav class="fixed-top nav-style">
+            <div class="container d-flex flex-wrap align-items-center">
+                <h2>Food<span style="color:var(--orange);">Spot</span></h2>
+                <div class="d-flex ms-auto">
+                    <a href="cartitems.html"><button id="cart-btn">Your Cart <i class="bi bi-cart"></i></button></a> 
+                </div>
+            </div>
+        </nav>
+
+        <h2 style="margin-top: 100px;">Welcome To Explore <span style="color: var(--orange);" >Rajasthani </span>Foods</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPavn9SM5AZhtMG4nCtyIF0Nh0kHbMwhpbIQO6aQ6KwQ&s=10">
+                        <div class="card-body">
+                            <h2>Dal Baati Churma</h2>
+                            <p>Baked wheat balls served with dal and sweet churma.</p>
+                            <h1>₹150</h1>
+                            <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="decrease(this)">-</button>
+                                <span>Quantity : <span class="qty">1</span></span>
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="increase(this)">+</button>
+                                <button class="btn" onclick="addToCart(this,'Dal Baati Churma',150,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPavn9SM5AZhtMG4nCtyIF0Nh0kHbMwhpbIQO6aQ6KwQ&s=10')">Add to Cart</button>
+                            </div>
+                            <button class="btn w-100 mt-2">Buy Your Food</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuxlQY3Q-1lbE-hKud6rJGbBd6QRi7XR4Bt4wbRGGtHA&s=10">
+                        <div class="card-body">
+                            <h2>Gatte Ki Sabzi</h2>
+                            <p>Besan dumplings cooked in spicy yogurt-based curry.</p>
+                            <h1>₹120</h1>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="decrease(this)">-</button>
+                                <span>Quantity : <span class="qty">1</span></span>
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="increase(this)">+</button>
+                                <button class="btn" onclick="addToCart(this,'Gatte Ki Sabzi',120,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuxlQY3Q-1lbE-hKud6rJGbBd6QRi7XR4Bt4wbRGGtHA&s=10')">Add to Cart</button>
+                            </div>
+                            <button class="btn w-100 mt-2">Buy Your Food</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJGhRnZQjF8yp_bNUtIm046z0aHFzmYQimhzpDEiUgUw&s=10">
+                        <div class="card-body">
+                            <h2>Laal Maas</h2>
+                            <p>Spicy mutton curry made with red chili and spices.</p>
+                            <h1>₹220</h1>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="decrease(this)">-</button>
+                                <span>Quantity : <span class="qty">1</span></span>
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="increase(this)">+</button>
+                                <button class="btn" onclick="addToCart(this,'Laal Maas',220,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJGhRnZQjF8yp_bNUtIm046z0aHFzmYQimhzpDEiUgUw&s=10')">Add to Cart</button>
+                            </div>
+                            <button class="btn w-100 mt-2">Buy Your Food</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrqaQ-AqfodKmqL5V08iIbhXfPznlPH_XJaBxiPQHv0P_-PZiMFKl_6bU&s=10">
+                        <div class="card-body">
+                            <h2>Ker Sangri</h2>
+                            <p>Tangy dry vegetable made from desert beans and berries.</p>
+                            <h1>₹140</h1>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="decrease(this)">-</button>
+                                <span>Quantity : <span class="qty">1</span></span>
+                                <button class="btn btn-outline-dark rounded-circle px-2" onclick="increase(this)">+</button>
+                                <button class="btn" onclick="addToCart(this,'Ker Sangri',140,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrqaQ-AqfodKmqL5V08iIbhXfPznlPH_XJaBxiPQHv0P_-PZiMFKl_6bU&s=10')">Add to Cart</button>
+                            </div>
+                            <button class="btn w-100 mt-2">Buy Your Food</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function increase(button){
+            let qty = button.parentElement.querySelector(".qty");
+            let quantity = Number(qty.innerText);
+            quantity++;
+            qty.innerText = quantity;
+        }
+        function decrease(button){
+            let qty = button.parentElement.querySelector(".qty");
+            let quantity = Number(qty.innerText);
+            if(quantity>1){
+                quantity--;
+                qty.innerText = quantity;
+            }
+        }
+
+        function addToCart(button,name,price,image){
+            let qty = button.parentElement.querySelector(".qty").innerText;
+
+            let cart = JSON.parse(localStorage.getItem("cart"))||[];
+
+            let existingItem = cart.find(item => item.name === name);
+
+            if(existingItem){
+                existingItem.quantity += Number(qty);
+            }
+            else{
+                cart.push({
+                    name : name,
+                    price : price,
+                    quantity : Number(qty),
+                    image : image
+                });
+            }
+
+            localStorage.setItem("cart",JSON.stringify(cart));
+            alert("Added to Cart");
+        }
+    </script>
+</body>
+</html>
