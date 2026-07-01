@@ -101,6 +101,8 @@
     
     function buyitems(){
         alert("Order Placed Successfully");
+        localStorage.removeItem("cart");
+        location.reload();
     }
     </script>
 </body>
